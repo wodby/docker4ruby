@@ -18,7 +18,7 @@ The Ruby stack consist of the following containers:
 | ------------- | ------------------ | --------------- | ---------------------------------- | ------- |
 | [Nginx]       | 1.15, 1.14         | `nginx`         | [wodby/nginx]                      | ✓       |
 | [Ruby]        | 2.5, 2.4, 2.3      | `ruby`          | [wodby/ruby]                       | ✓       |
-| [Sidekiq]*    |                    | `sidekiq`       | [wodby/ruby]                       |         |
+| [Sidekiq]     |                    | `sidekiq`       | [wodby/ruby]                       |         |
 | [PostgreSQL]  | 10, 9.x            | `postgres`      | [wodby/postgres]                   | ✓       |
 | [Redis]       | 4.0, 3.2           | `redis`         | [wodby/redis]                      | ✓       |
 | [MariaDB]     | 10.3, 10.2, 10.1   | `mariadb`       | [wodby/mariadb]                    |         |
@@ -36,15 +36,13 @@ The Ruby stack consist of the following containers:
 | Portainer     | latest             | `portainer`     | [portainer/portainer]              | ✓       |
 | Traefik       | latest             | `traefik`       | [_/traefik]                        | ✓       |
 
-* For Sidekiq we run a copy of ruby service with a command overridden to `bundle exec sidekiq` and `$REDIS_URL` env var.
-
 ## Documentation
 
 Full documentation is available at https://wodby.com/docs/stacks/ruby/local
 
 ## Maintenance
 
-We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4ruby/releases) for full changelog and update instructions.
+We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4ruby/releases) for detailed changelog and update instructions.
 
 ## License
 
@@ -63,6 +61,7 @@ This project is licensed under the MIT open source license.
 [Redis]: https://wodby.com/stacks/ruby/docs/containers/redis
 [Rsyslog]: https://wodby.com/stacks/ruby/docs/containers/rsyslog/
 [Ruby]: https://wodby.com/stacks/ruby/docs/containers/ruby/
+[Siekiq]: https://wodby.com/stacks/ruby/docs/containers/sidekiq
 [Solr]: https://wodby.com/stacks/ruby/docs/containers/solr/
 [Varnish]: https://wodby.com/stacks/ruby/docs/containers/varnish
 
@@ -76,12 +75,12 @@ This project is licensed under the MIT open source license.
 [wodby/kibana]: https://github.com/wodby/kibana
 [wodby/mariadb]: https://github.com/wodby/mariadb
 [wodby/memcached]: https://github.com/wodby/memcached
+[wodby/nginx]: https://github.com/wodby/nginx
 [wodby/node]: https://github.com/wodby/node
 [wodby/opensmtpd]: https://github.com/wodby/opensmtpd
-[wodby/nginx]: https://github.com/wodby/nginx
-[wodby/ruby]: https://github.com/wodby/ruby
 [wodby/postgres]: https://github.com/wodby/postgres
 [wodby/redis]: https://github.com/wodby/redis
 [wodby/rsyslog]: https://hub.docker.com/r/wodby/rsyslog
+[wodby/ruby]: https://github.com/wodby/ruby
 [wodby/solr]: https://github.com/wodby/solr
 [wodby/varnish]: https://github.com/wodby/varnish

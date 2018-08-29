@@ -2,9 +2,9 @@
 
 set -e
 
-if [[ -n "${DEBUG}" ]]; then
+#if [[ -n "${DEBUG}" ]]; then
     set -x
-fi
+#fi
 
 docker-compose build
 docker-compose up -d
