@@ -42,8 +42,6 @@ services:
     volumes:
       - codebase:/usr/src/app
     command: ["bundle", "exec", "sidekiq"]
-    depends_on:
-      - ruby
 
   redis:
     image: wodby/redis:$REDIS_TAG
