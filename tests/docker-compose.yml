@@ -12,8 +12,7 @@ services:
     build:
       context: ./
       args:
-        RUBY_TAG: $RUBY_VER-dev
-#        RUBY_TAG: $RUBY_VER-dev-$RUBY_STABILITY_TAG
+        RUBY_TAG: $RUBY_VER-dev-$RUBY_STABILITY_TAG
     environment:
       DEBUG: 1
       DB_HOST: $DB_HOST
@@ -26,6 +25,28 @@ services:
       - ./tests.sh:/usr/local/bin/tests.sh
     depends_on:
       - postgres
+
+  sidekiq:
+    build:
+      context: ./
+      args:
+        RUBY_TAG: $RUBY_VER-dev-$RUBY_STABILITY_TAG
+    environment:
+      DEBUG: 1
+      DB_HOST: $DB_HOST
+      DB_USER: $DB_USER
+      DB_NAME: $DB_NAME
+      DB_PASSWORD: $DB_PASSWORD
+      DB_ADAPTER: $DB_ADAPTER
+      REDIS_URL: redis://redis:6379
+    volumes:
+      - codebase:/usr/src/app
+    command: ["bundle", "exec", "sidekiq"]
+    depends_on:
+      - ruby
+
+  redis:
+    image: wodby/redis:$REDIS_TAG
 
   nginx:
     image: wodby/nginx:$NGINX_TAG

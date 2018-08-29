@@ -44,6 +44,26 @@ services:
 #      - ./:/usr/src/app:cached # User-guided caching
 #      - docker-sync:/usr/src/app # Docker-sync
 
+#  sidekiq:
+#    build:
+#      context: ./
+#      args:
+#        RUBY_TAG: $RUBY_TAG
+#    container_name: "${PROJECT_NAME}_sidekiq"
+#    environment:
+#      DB_HOST: $DB_HOST
+#      DB_USER: $DB_USER
+#      DB_PASSWORD: $DB_PASSWORD
+#      DB_NAME: $DB_NAME
+#      DB_ADAPTER: $DB_ADAPTER
+#      REDIS_URL: redis://redis:6379
+#    command: ["bundle", "exec", "sidekiq"]
+#    volumes:
+#      - ./:/usr/src/app
+### For macOS users (https://wodby.com/stacks/ruby/docs/local/docker-for-mac/)
+##      - ./:/usr/src/app:cached # User-guided caching
+##      - docker-sync:/usr/src/app # Docker-sync
+
   nginx:
     image: wodby/nginx:$NGINX_TAG
     container_name: "${PROJECT_NAME}_nginx"
@@ -87,9 +107,9 @@ services:
 #      - 'traefik.port=6081'
 #      - 'traefik.frontend.rule=Host:varnish.${PROJECT_BASE_URL}'
 
-#  redis:
-#    container_name: "${PROJECT_NAME}_redis"
-#    image: wodby/redis:$REDIS_TAG
+  redis:
+    container_name: "${PROJECT_NAME}_redis"
+    image: wodby/redis:$REDIS_TAG
 
 #  adminer:
 #    container_name: "${PROJECT_NAME}_adminer"
