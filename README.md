@@ -61,7 +61,7 @@ This project is licensed under the MIT open source license.
 [Redis]: https://wodby.com/stacks/ruby/docs/containers/redis
 [Rsyslog]: https://wodby.com/stacks/ruby/docs/containers/rsyslog/
 [Ruby]: https://wodby.com/stacks/ruby/docs/containers/ruby/
-[Siekiq]: https://wodby.com/stacks/ruby/docs/containers/sidekiq
+[Sidekiq]: https://wodby.com/stacks/ruby/docs/containers/sidekiq
 [Solr]: https://wodby.com/stacks/ruby/docs/containers/solr/
 [Varnish]: https://wodby.com/stacks/ruby/docs/containers/varnish
 
