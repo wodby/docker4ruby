@@ -7,7 +7,7 @@ env:
   matrix:
     - RUBY_VER=2.5
     - RUBY_VER=2.4
-    - RUBY_VER=2.3
+    - RUBY_VER=2.3 GITHUB_RELEASE=1
 
 script:
   - set -e
@@ -25,3 +25,4 @@ deploy:
     - docker4ruby.tar.gz
   on:
     tags: true
+    condition: $GITHUB_RELEASE = 1
