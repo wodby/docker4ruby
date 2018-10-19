@@ -20,14 +20,14 @@ The Ruby stack consist of the following containers:
 | [Ruby]          | 2.5, 2.4, 2.3      | `ruby`          | [wodby/ruby]                       | ✓       |
 | [Sidekiq]       |                    | `sidekiq`       | [wodby/ruby]                       |         |
 | [PostgreSQL]    | 10, 9.x            | `postgres`      | [wodby/postgres]                   | ✓       |
-| [Redis]         | 4.0, 3.2           | `redis`         | [wodby/redis]                      | ✓       |
+| [Redis]         | 5, 4               | `redis`         | [wodby/redis]                      | ✓       |
 | [MariaDB]       | 10.3, 10.2, 10.1   | `mariadb`       | [wodby/mariadb]                    |         |
-| [Node.js]       | 9.11, 8.11, 6.14   | `node`          | [wodby/node]                       |         |
+| [Node.js]       | 10, 8, 6           | `node`          | [wodby/node]                       |         |
 | [Varnish]       | 4.1                | `varnish`       | [wodby/varnish]                    |         |
 | [Solr]          | 7.x, 6.6, 5.5      | `solr`          | [wodby/solr]                       |         |
 | [Elasticsearch] | 6.x, 5.6, 5.5, 5.4 | `elasticsearch` | [wodby/elasticsearch]              |         |
 | [Kibana]        | 6.x, 5.6, 5.5, 5.4 | `kibana`        | [wodby/kibana]                     |         |
-| [Memcached]     | 1.5                | `memcached`     | [wodby/memcached]                  |         |
+| [Memcached]     | 1                  | `memcached`     | [wodby/memcached]                  |         |
 | [Rsyslog]       | latest             | `rsyslog`       | [wodby/rsyslog]                    |         |
 | [AthenaPDF]     | 2.10.0             | `athenapdf`     | [arachnysdocker/athenapdf-service] |         |
 | [Mailhog]       | latest             | `mailhog`       | [mailhog/mailhog]                  | ✓       |
