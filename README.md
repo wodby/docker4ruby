@@ -23,7 +23,7 @@ The Ruby stack consist of the following containers:
 | [Redis]         | 5, 4               | `redis`         | [wodby/redis]                      | ✓       |
 | [MariaDB]       | 10.3, 10.2, 10.1   | `mariadb`       | [wodby/mariadb]                    |         |
 | [Node.js]       | 10, 8, 6           | `node`          | [wodby/node]                       |         |
-| [Varnish]       | 4.1                | `varnish`       | [wodby/varnish]                    |         |
+| [Varnish]       | 6.0, 4.1           | `varnish`       | [wodby/varnish]                    |         |
 | [Solr]          | 7.x, 6.6, 5.5      | `solr`          | [wodby/solr]                       |         |
 | [Elasticsearch] | 6.x, 5.6, 5.5, 5.4 | `elasticsearch` | [wodby/elasticsearch]              |         |
 | [Kibana]        | 6.x, 5.6, 5.5, 5.4 | `kibana`        | [wodby/kibana]                     |         |
