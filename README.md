@@ -17,7 +17,7 @@ The Ruby stack consist of the following containers:
 | Container       | Versions           | Service name    | Image                              | Default |
 | -------------   | ------------------ | --------------- | ---------------------------------- | ------- |
 | [Nginx]         | 1.15, 1.14         | `nginx`         | [wodby/nginx]                      | ✓       |
-| [Ruby]          | 2.5, 2.4, 2.3      | `ruby`          | [wodby/ruby]                       | ✓       |
+| [Ruby]          | 2.6, 2.5, 2.4, 2.3 | `ruby`          | [wodby/ruby]                       | ✓       |
 | [Sidekiq]       |                    | `sidekiq`       | [wodby/ruby]                       |         |
 | [PostgreSQL]    | 11, 10, 9.x        | `postgres`      | [wodby/postgres]                   | ✓       |
 | [Redis]         | 5, 4               | `redis`         | [wodby/redis]                      | ✓       |
