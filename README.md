@@ -14,27 +14,27 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 The Ruby stack consist of the following containers:
 
-| Container       | Versions         | Service name    | Image                              | Default |
-| -------------   | ---------------- | --------------- | ---------------------------------- | ------- |
-| [Nginx]         | 1.15, 1.14       | `nginx`         | [wodby/nginx]                      | ✓       |
-| [Ruby]          | 2.6, 2.5, 2.4    | `ruby`          | [wodby/ruby]                       | ✓       |
-| [Sidekiq]       |                  | `sidekiq`       | [wodby/ruby]                       |         |
-| [PostgreSQL]    | 11, 10, 9.x      | `postgres`      | [wodby/postgres]                   | ✓       |
-| [Redis]         | 5, 4             | `redis`         | [wodby/redis]                      | ✓       |
-| [MariaDB]       | 10.3, 10.2, 10.1 | `mariadb`       | [wodby/mariadb]                    |         |
-| [Node.js]       | 10, 8, 6         | `node`          | [wodby/node]                       |         |
-| [Varnish]       | 6.0, 4.1         | `varnish`       | [wodby/varnish]                    |         |
-| [Solr]          | 7.x, 6.6, 5.5    | `solr`          | [wodby/solr]                       |         |
-| [Elasticsearch] | 6.x, 5.6         | `elasticsearch` | [wodby/elasticsearch]              |         |
-| [Kibana]        | 6.x, 5.6         | `kibana`        | [wodby/kibana]                     |         |
-| [Memcached]     | 1                | `memcached`     | [wodby/memcached]                  |         |
-| [Rsyslog]       | latest           | `rsyslog`       | [wodby/rsyslog]                    |         |
-| [AthenaPDF]     | 2.10.0           | `athenapdf`     | [arachnysdocker/athenapdf-service] |         |
-| [Mailhog]       | latest           | `mailhog`       | [mailhog/mailhog]                  | ✓       |
-| [OpenSMTPD]     | 6.0              | `opensmtpd`     | [wodby/opensmtpd]                  |         |
-| Adminer         | 4.6              | `adminer`       | [wodby/adminer]                    |         |
-| Portainer       | latest           | `portainer`     | [portainer/portainer]              | ✓       |
-| Traefik         | latest           | `traefik`       | [_/traefik]                        | ✓       |
+| Container       | Versions                | Service name    | Image                              | Default |
+| -------------   | ----------------        | --------------- | ---------------------------------- | ------- |
+| [Nginx]         | 1.15, 1.14              | `nginx`         | [wodby/nginx]                      | ✓       |
+| [Ruby]          | 2.6, 2.5, 2.4           | `ruby`          | [wodby/ruby]                       | ✓       |
+| [Sidekiq]       |                         | `sidekiq`       | [wodby/ruby]                       |         |
+| [PostgreSQL]    | 11, 10, 9.x             | `postgres`      | [wodby/postgres]                   | ✓       |
+| [Redis]         | 5, 4                    | `redis`         | [wodby/redis]                      | ✓       |
+| [MariaDB]       | 10.3, 10.2, 10.1        | `mariadb`       | [wodby/mariadb]                    |         |
+| [Node.js]       | 10, 8, 6                | `node`          | [wodby/node]                       |         |
+| [Varnish]       | 6.0, 4.1                | `varnish`       | [wodby/varnish]                    |         |
+| [Solr]          | 7.7, 7.6, 7.5, 6.6, 5.5 | `solr`          | [wodby/solr]                       |         |
+| [Elasticsearch] | 6.7, 5.6                | `elasticsearch` | [wodby/elasticsearch]              |         |
+| [Kibana]        | 6.7, 5.6                | `kibana`        | [wodby/kibana]                     |         |
+| [Memcached]     | 1                       | `memcached`     | [wodby/memcached]                  |         |
+| [Rsyslog]       | latest                  | `rsyslog`       | [wodby/rsyslog]                    |         |
+| [AthenaPDF]     | 2.10.0                  | `athenapdf`     | [arachnysdocker/athenapdf-service] |         |
+| [Mailhog]       | latest                  | `mailhog`       | [mailhog/mailhog]                  | ✓       |
+| [OpenSMTPD]     | 6.0                     | `opensmtpd`     | [wodby/opensmtpd]                  |         |
+| Adminer         | 4.6                     | `adminer`       | [wodby/adminer]                    |         |
+| Portainer       | latest                  | `portainer`     | [portainer/portainer]              | ✓       |
+| Traefik         | latest                  | `traefik`       | [_/traefik]                        | ✓       |
 
 ## Documentation
 
