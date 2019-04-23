@@ -1,19 +1,19 @@
 language: bash
 
 services:
-  - docker
+- docker
 
 env:
   matrix:
-    - RUBY_VER=2.6
-    - RUBY_VER=2.5
-    - RUBY_VER=2.4 GITHUB_RELEASE=1
+  - RUBY_VER=2.6
+  - RUBY_VER=2.5
+  - RUBY_VER=2.4 GITHUB_RELEASE=1
 
 script:
-  - set -e
-  - make test
-  - cp docker.mk Makefile
-  - tar -czf docker4ruby.tar.gz Dockerfile docker-compose.yml docker-sync.yml Makefile .env traefik.yml
+- set -e
+- make test
+- cp docker.mk Makefile
+- tar -czf docker4ruby.tar.gz Dockerfile docker-compose.yml docker-sync.yml Makefile .env traefik.yml
 
 deploy:
   provider: releases
@@ -22,7 +22,14 @@ deploy:
   skip_cleanup: true
   file_glob: true
   file:
-    - docker4ruby.tar.gz
+  - docker4ruby.tar.gz
   on:
     tags: true
     condition: $GITHUB_RELEASE = 1
+
+notifications:
+  email:
+    recipients:
+    - travisci@wodby.com
+    on_success: never
+    on_failure: always
