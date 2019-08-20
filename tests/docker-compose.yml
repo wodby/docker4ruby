@@ -20,6 +20,7 @@ services:
       DB_NAME: $DB_NAME
       DB_PASSWORD: $DB_PASSWORD
       DB_ADAPTER: $DB_ADAPTER
+      RAILS_ENV: development
     volumes:
       - codebase:/usr/src/app
       - ./tests.sh:/usr/local/bin/tests.sh
