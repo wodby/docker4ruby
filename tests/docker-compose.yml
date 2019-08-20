@@ -31,7 +31,7 @@ services:
     build:
       context: ./
       args:
-        RUBY_TAG: $RUBY_VER-dev-$RUBY_STABILITY_TAG
+        RUBY_TAG: "${RUBY_VER}-dev-${RUBY_STABILITY_TAG}"
     environment:
       DEBUG: 1
       DB_HOST: $DB_HOST
