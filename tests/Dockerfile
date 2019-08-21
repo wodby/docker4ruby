@@ -12,6 +12,6 @@ RUN rails g sidekiq:worker Hard
 
 COPY database.yml config/database.yml
 
-RUN if [[ "${RUBY_VERSION:0:3}" != "2.4" ]]; then \
+RUN if rails version | grep -q "6."; then \
         sed -i '/Rails.application.configure do/a\  config.hosts << "nginx"' config/environments/development.rb; \
     fi
