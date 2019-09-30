@@ -40,7 +40,7 @@ services:
       DB_ADAPTER: $DB_ADAPTER
     volumes:
       - ./:/usr/src/app
-## For macOS users (https://wodby.com/stacks/ruby/docs/local/docker-for-mac/)
+## For macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
 #      - ./:/usr/src/app:cached # User-guided caching
 #      - docker-sync:/usr/src/app # Docker-sync
 
@@ -60,7 +60,7 @@ services:
 #    command: ["bundle", "exec", "sidekiq"]
 #    volumes:
 #      - ./:/usr/src/app
-### For macOS users (https://wodby.com/stacks/ruby/docs/local/docker-for-mac/)
+### For macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
 ##      - ./:/usr/src/app:cached # User-guided caching
 ##      - docker-sync:/usr/src/app # Docker-sync
 
@@ -76,7 +76,7 @@ services:
       NGINX_VHOST_PRESET: http-proxy
     volumes:
       - ./:/usr/src/app
-# Options for macOS users (https://wodby.com/stacks/ruby/docs/local/docker-for-mac/)
+# Options for macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
 #      - ./:/usr/src/app:cached # User-guided caching
 #      - docker-sync:/usr/src/app # Docker-sync
     labels:
