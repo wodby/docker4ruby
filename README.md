@@ -19,7 +19,7 @@ The Ruby stack consist of the following containers:
 | [Nginx]         | 1.17, 1.16              | `nginx`         | [wodby/nginx]                      | ✓       |
 | [Ruby]          | 2.6, 2.5, 2.4           | `ruby`          | [wodby/ruby]                       | ✓       |
 | [Sidekiq]       |                         | `sidekiq`       | [wodby/ruby]                       |         |
-| [PostgreSQL]    | 11, 10, 9.x             | `postgres`      | [wodby/postgres]                   | ✓       |
+| [PostgreSQL]    | 12, 11, 10, 9.x         | `postgres`      | [wodby/postgres]                   | ✓       |
 | [Redis]         | 5, 4                    | `redis`         | [wodby/redis]                      | ✓       |
 | [MariaDB]       | 10.4, 10.3, 10.2, 10.1  | `mariadb`       | [wodby/mariadb]                    |         |
 | [Node.js]       | 12, 10, 8               | `node`          | [wodby/node]                       |         |
