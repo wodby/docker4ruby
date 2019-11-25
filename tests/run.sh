@@ -9,6 +9,7 @@ fi
 docker-compose build
 docker-compose up -d
 docker-compose exec postgres make check-ready -f /usr/local/bin/actions.mk max_try=12 wait_seconds=5
-docker-compose exec sidekiq ps aux | grep -q sidekiq
+sleep 5
+docker-compose exec sidekiq ps aux | grep sidekiq
 docker-compose exec ruby tests.sh
 docker-compose down
