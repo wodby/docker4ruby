@@ -39,10 +39,9 @@ services:
       DB_NAME: $DB_NAME
       DB_ADAPTER: $DB_ADAPTER
     volumes:
-      - ./:/usr/src/app
-## For macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
-#      - ./:/usr/src/app:cached # User-guided caching
-#      - docker-sync:/usr/src/app # Docker-sync
+      - ./:/usr/src/app:cached
+## Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
+#      - docker-sync:/usr/src/app
 
 #  sidekiq:
 #    build:
@@ -59,10 +58,9 @@ services:
 #      REDIS_URL: redis://redis:6379
 #    command: ["bundle", "exec", "sidekiq"]
 #    volumes:
-#      - ./:/usr/src/app
-### For macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
-##      - ./:/usr/src/app:cached # User-guided caching
-##      - docker-sync:/usr/src/app # Docker-sync
+#      - ./:/usr/src/app:cached
+## Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
+#      - docker-sync:/usr/src/app
 
   nginx:
     image: wodby/nginx:$NGINX_TAG
@@ -75,10 +73,9 @@ services:
       NGINX_BACKEND_HOST: ruby
       NGINX_VHOST_PRESET: http-proxy
     volumes:
-      - ./:/usr/src/app
-# Options for macOS users (https://wodby.com/docs/stacks/ruby/local#docker-for-mac)
-#      - ./:/usr/src/app:cached # User-guided caching
-#      - docker-sync:/usr/src/app # Docker-sync
+      - ./:/usr/src/app:cached
+## Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
+#      - docker-sync:/usr/src/app
     labels:
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
 
