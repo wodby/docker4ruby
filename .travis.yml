@@ -5,9 +5,9 @@ services:
 
 env:
   matrix:
+  - RUBY_VER=2.7
   - RUBY_VER=2.6
-  - RUBY_VER=2.5
-  - RUBY_VER=2.4 GITHUB_RELEASE=1
+  - RUBY_VER=2.5 GITHUB_RELEASE=1
 
 script:
 - set -e
