@@ -1,6 +1,6 @@
 include .env
 
-.PHONY: up down stop prune ps shell logs
+.PHONY: up down stop prune ps shell logs mutagen
 
 default: up
 
@@ -15,7 +15,6 @@ up:
 	docker-compose build
 	docker-compose up -d --remove-orphans
 
-.PHONY: mutagen
 mutagen:
 	docker-compose up -d mutagen
 	mutagen project start -f mutagen/config.yml
