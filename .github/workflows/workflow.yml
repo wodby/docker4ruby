@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/')
     steps:
+    - uses: actions/checkout@v2
     - name: prepare artifact
       run: cp docker.mk Makefile && tar -czf docker4ruby.tar.gz docker-compose.yml docker-compose.override.yml mutagen Makefile .env traefik.yml
     - uses: octokit/request-action@v2.x
