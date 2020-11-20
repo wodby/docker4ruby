@@ -28,7 +28,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: prepare artifact
-      run: cp docker.mk Makefile && tar -czf docker4ruby.tar.gz docker-compose.yml docker-compose.override.yml mutagen Makefile .env traefik.yml
+      run: cp docker.mk Makefile && tar -czf docker4ruby.tar.gz docker-compose.yml mutagen Makefile .env traefik.yml
     - uses: octokit/request-action@v2.x
       id: get_latest_release
       with:
