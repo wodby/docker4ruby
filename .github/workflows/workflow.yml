@@ -37,14 +37,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: get upload url
       id: get_upload_url
-      run: |
-        url=$(echo "$response" | jq -r '.upload_url')
-        echo "::set-output name=url::$url"
-      env:
-        response:  ${{ steps.get_latest_release.outputs.data }}
+      uses: pdamianik/release-tag-to-upload-url-action@v1.0.1
+      with:
+        tag: ${{ github.ref }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/upload-release-asset@v1
       with:
-        upload_url: ${{steps.get_upload_url.outputs.url}}
+        upload_url: ${{steps.get_upload_url.uploadUrl}}
         asset_path: ./docker4ruby.tar.gz
         asset_name: docker4ruby.tar.gz
         asset_content_type: application/tar+gzip
