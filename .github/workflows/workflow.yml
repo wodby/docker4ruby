@@ -38,4 +38,3 @@ jobs:
         file: docker4ruby.tar.gz
         overwrite: true
         tags: true
-        draft: true
