@@ -29,26 +29,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: prepare artifact
       run: cp docker.mk Makefile && tar -czf docker4ruby.tar.gz docker-compose.yml mutagen Makefile .env traefik.yml
-    - uses: octokit/request-action@v2.x
-      id: get_latest_release
-      with:
-        route: GET /repos/:repository/releases/latest
-        repository: ${{ github.repository }}
+    - uses: xresloader/upload-to-github-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: get upload url
-      id: get_upload_url
-      uses: pdamianik/release-tag-to-upload-url-action@v1.0.1
       with:
-        tag: ${{ github.ref }}
-        token: ${{ secrets.GITHUB_TOKEN }}
-    - uses: actions/upload-release-asset@v1
-      with:
-        upload_url: ${{steps.get_upload_url.uploadUrl}}
-        asset_path: ./docker4ruby.tar.gz
-        asset_name: docker4ruby.tar.gz
-        asset_content_type: application/tar+gzip
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    needs:
-      test
+        file: docker4ruby.tar.gz
+        tags: true
+        draft: true
