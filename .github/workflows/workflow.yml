@@ -38,3 +38,5 @@ jobs:
         file: docker4ruby.tar.gz
         overwrite: true
         tags: true
+        draft: false
+        tag_name: ${GITHUB_REF##*/}
