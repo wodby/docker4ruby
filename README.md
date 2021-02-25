@@ -14,7 +14,7 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 The Ruby stack consist of the following containers:
 
-| Container       | Versions                | Image                              | ARM64 support | Default |
+| Container       | Versions                | Image                              | ARM64 support | Enabled by default |
 | -------------   | ----------------        | ---------------------------------- | ------------- | ------- |
 | [Nginx]         | 1.19, 1.18              | [wodby/nginx]                      | ✓             | ✓       |
 | [Ruby]          | 3.0, 2.7, 2.6, 2.5      | [wodby/ruby]                       | ✓             | ✓       |
