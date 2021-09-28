@@ -16,7 +16,7 @@ The Ruby stack consist of the following containers:
 
 | Container       | Versions                | Image                              | ARM64 support | Enabled by default |
 | -------------   | ----------------        | ---------------------------------- | ------------- | ------- |
-| [Nginx]         | 1.20, 1.19              | [wodby/nginx]                      | ✓             | ✓       |
+| [Nginx]         | 1.21, 1.20, 1.19        | [wodby/nginx]                      | ✓             | ✓       |
 | [Ruby]          | 3.0, 2.7, 2.6           | [wodby/ruby]                       | ✓             | ✓       |
 | [Sidekiq]       |                         | [wodby/ruby]                       | ✓             |         |
 | [PostgreSQL]    | 13, 12, 11, 10, 9.6     | [wodby/postgres]                   | ✓             | ✓       |
