@@ -2,7 +2,11 @@ ARG RUBY_TAG
 
 FROM wodby/ruby:${RUBY_TAG}
 
-RUN gem install rails
+RUN if [[ "${RUBY_VERSION}" =~ ^2.6. ]]; then \
+      gem install rails -v 6;  \
+    else  \
+      gem install rails;  \
+    fi
 
 RUN sudo apk add --update yarn
 RUN rails new . --database=postgresql
@@ -12,6 +16,4 @@ RUN rails g sidekiq:worker Hard
 
 COPY database.yml config/database.yml
 
-RUN if rails version | grep -q "Rails 6."; then \
-        sed -i '/Rails.application.configure do/a\  config.hosts << "nginx"' config/environments/development.rb; \
-    fi
+RUN sed -i '/Rails.application.configure do/a\  config.hosts << "nginx"' config/environments/development.rb;
