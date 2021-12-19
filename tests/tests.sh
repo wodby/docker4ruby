@@ -9,4 +9,8 @@ fi
 rake db:migrate
 rake db:seed
 
-curl -s nginx | grep -q "Yay! You&rsquo;re on Rails!"
+if [[ "$(rails version)" =~ ^6. ]]; then
+  curl -s nginx | grep -q "Yay! You&rsquo;re on Rails!"
+else
+  curl -s nginx | grep -q "Rails version:"
+fi
