@@ -2,12 +2,7 @@ ARG RUBY_TAG
 
 FROM wodby/ruby:${RUBY_TAG}
 
-RUN if [[ "${RUBY_VERSION}" =~ ^2.6. ]]; then \
-      gem install rails -v 6;  \
-    else  \
-      gem install rails;  \
-    fi
-
+RUN gem install rails
 RUN sudo apk add --update yarn
 RUN rails new . --database=postgresql
 RUN bundle add sidekiq
