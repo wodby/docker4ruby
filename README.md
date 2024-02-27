@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Docker4Ruby is a set of docker images optimized for Ruby applications (suitable for Ruby on Rails). Use `docker-compose.yml` file from the [latest stable release](https://github.com/wodby/docker4ruby/releases) to spin up local environment on Linux, Mac OS X and Windows. 
+Docker4Ruby is a set of docker images optimized for Ruby applications (suitable for Ruby on Rails). Use `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4ruby/releases) to spin up local environment on Linux, Mac OS X and Windows. 
 
 * Read the docs on [**how to use**](https://wodby.com/docs/stacks/ruby/local#usage)
 * Ask questions on [Discord](http://discord.wodby.com/)

@@ -11,10 +11,10 @@ e.g. macOS Sierra
 
 ### Docker compose file
 ```yml
-# Content of your docker-compose.yml file. Make sure you remove all sensible information you might have there.
+# Content of your compose.yml file. Make sure you remove all sensible information you might have there.
 ```
 
 ### Logs output
 ```
-# Run "docker-compose logs [service]". Let's say you get 500 error for some reason then it'll be helpful to provide logs for ruby and nginx services.
+# Run "docker compose logs [service]". Let's say you get 500 error for some reason then it'll be helpful to provide logs for ruby and nginx services.
 ```
