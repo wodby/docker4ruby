@@ -21,7 +21,7 @@ The Ruby stack consist of the following containers:
 | [Ruby]          | 3.3, 3.2, 3.1, 3.0          | [wodby/ruby]                       | ✓             | ✓                  |
 | [Sidekiq]       |                             | [wodby/ruby]                       | ✓             |                    |
 | [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]                   | ✓             | ✓                  |
-| [Redis]         | 7, 6                        | [wodby/redis]                      | ✓             | ✓                  |
+| [Valkey]        | 7                           | [wodby/valkey]                     | ✓             | ✓                  |
 | [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]                    | ✓             |                    |
 | [Node.js]       | 20, 18                      | [wodby/node]                       |               |                    |
 | [Varnish]       | 6.0                         | [wodby/varnish]                    |               |                    |
@@ -44,7 +44,7 @@ Full documentation is available at https://wodby.com/docs/stacks/ruby/local
 
 Images tags format is `[VERSION]-[STABILITY_TAG]` where:
 
-`[VERSION]` is the _version of an application_ (without patch version) running in a container, e.g. `wodby/nginx:1.15-x.x.x` where Nginx version is `1.15` and `x.x.x` is a stability tag. For some images we include both major and minor version like Ruby `2.5`, for others we include only major like Redis `5`. 
+`[VERSION]` is the _version of an application_ (without patch version) running in a container, e.g. `wodby/nginx:1.15-x.x.x` where Nginx version is `1.15` and `x.x.x` is a stability tag. For some images we include both major and minor version like Ruby `2.5`, for others we include only major like Valkey `7`. 
 
 `[STABILITY_TAG]` is the _version of an image_ that corresponds to a git tag of the image repository, e.g. `wodby/mariadb:10.2-3.3.8` has MariaDB `10.2` and stability tag [`3.3.8`](https://github.com/wodby/mariadb/releases/tag/3.3.8). New stability tags include patch updates for applications and image's fixes/improvements (new env vars, orchestration actions fixes, etc). Stability tag changes described in the corresponding a git tag description. Stability tags follow [semantic versioning](https://semver.org/).
 
@@ -75,11 +75,11 @@ This project is licensed under the MIT open source license.
 [Node.js]: https://wodby.com/docs/stacks/ruby/containers#node
 [OpenSMTPD]: https://wodby.com/docs/stacks/ruby/containers#opensmtpd
 [PostgreSQL]: https://wodby.com/docs/stacks/ruby/containers#postgres
-[Redis]: https://wodby.com/docs/stacks/ruby/containers#redis
 [Rsyslog]: https://wodby.com/docs/stacks/ruby/containers#rsyslog
 [Ruby]: https://wodby.com/docs/stacks/ruby/containers#ruby
 [Sidekiq]: https://wodby.com/docs/stacks/ruby/containers#sidekiq
 [Solr]: https://wodby.com/docs/stacks/solr
+[Valkey]: https://wodby.com/docs/stacks/ruby/containers#valkey
 [Varnish]: https://wodby.com/docs/stacks/ruby/containers#varnish
 
 [_/traefik]: https://hub.docker.com/_/traefik
@@ -95,8 +95,8 @@ This project is licensed under the MIT open source license.
 [wodby/node]: https://github.com/wodby/node
 [wodby/opensmtpd]: https://github.com/wodby/opensmtpd
 [wodby/postgres]: https://github.com/wodby/postgres
-[wodby/redis]: https://github.com/wodby/redis
 [wodby/rsyslog]: https://hub.docker.com/r/wodby/rsyslog
 [wodby/ruby]: https://github.com/wodby/ruby
 [wodby/solr]: https://github.com/wodby/solr
+[wodby/valkey]: https://github.com/wodby/valkey
 [wodby/varnish]: https://github.com/wodby/varnish
