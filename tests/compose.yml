@@ -37,13 +37,13 @@ services:
       DB_NAME: $DB_NAME
       DB_PASSWORD: $DB_PASSWORD
       DB_ADAPTER: $DB_ADAPTER
-      REDIS_URL: redis://redis:6379
+      REDIS_URL: redis://valkey:6379
     volumes:
       - codebase:/usr/src/app
     command: ["bundle", "exec", "sidekiq"]
 
-  redis:
-    image: wodby/redis:$REDIS_TAG
+  valkey:
+    image: wodby/valkey:$VALKEY_TAG
 
   nginx:
     image: wodby/nginx:$NGINX_TAG
