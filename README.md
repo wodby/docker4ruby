@@ -15,26 +15,26 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 The Ruby stack consist of the following containers:
 
-| Container       | Versions                    | Image                              | ARM64 support | Enabled by default |
-|-----------------|-----------------------------|------------------------------------|---------------|--------------------|
-| [Nginx]         | 1.27, 1.26                  | [wodby/nginx]                      | ✓             | ✓                  |
-| [Ruby]          | 3.3, 3.2, 3.1               | [wodby/ruby]                       | ✓             | ✓                  |
-| [Sidekiq]       |                             | [wodby/ruby]                       | ✓             |                    |
-| [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]                   | ✓             | ✓                  |
-| [Valkey]        | 7                           | [wodby/valkey]                     | ✓             | ✓                  |
-| [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]                    | ✓             |                    |
-| [Node.js]       | 20, 18                      | [wodby/node]                       | ✓             |                    |
-| [Varnish]       | 6.0                         | [wodby/varnish]                    | ✓             |                    |
-| [Solr]          | 8                           | [wodby/solr]                       |               |                    |
-| [Elasticsearch] | 7                           | [wodby/elasticsearch]              |               |                    |
-| [Kibana]        | 7                           | [wodby/kibana]                     |               |                    |
-| [Memcached]     | 1                           | [wodby/memcached]                  |               |                    |
-| [Rsyslog]       | latest                      | [wodby/rsyslog]                    |               |                    |
-| [AthenaPDF]     | 2.16.0                      | [arachnysdocker/athenapdf-service] |               |                    |
-| Mailpit         | latest                      | [axllent/mailpit]                  | ✓             | ✓                  |
-| [OpenSMTPD]     | 6.0                         | [wodby/opensmtpd]                  | ✓             |                    |
-| Adminer         | 4.6                         | [wodby/adminer]                    | ✓             |                    |
-| Traefik         | latest                      | [_/traefik]                        | ✓             | ✓                  |
+| Container       | Versions                    | Image                 | ARM64 support | Enabled by default |
+|-----------------|-----------------------------|-----------------------|---------------|--------------------|
+| [Nginx]         | 1.27, 1.26                  | [wodby/nginx]         | ✓             | ✓                  |
+| [Ruby]          | 3.3, 3.2, 3.1               | [wodby/ruby]          | ✓             | ✓                  |
+| [Sidekiq]       |                             | [wodby/ruby]          | ✓             |                    |
+| [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]      | ✓             | ✓                  |
+| [Valkey]        | 7                           | [wodby/valkey]        | ✓             | ✓                  |
+| [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]       | ✓             |                    |
+| [Node.js]       | 20, 18                      | [wodby/node]          | ✓             |                    |
+| [Varnish]       | 6.0                         | [wodby/varnish]       | ✓             |                    |
+| [Solr]          | 8                           | [wodby/solr]          |               |                    |
+| [Elasticsearch] | 7                           | [wodby/elasticsearch] |               |                    |
+| [Kibana]        | 7                           | [wodby/kibana]        |               |                    |
+| [Memcached]     | 1                           | [wodby/memcached]     |               |                    |
+| [Rsyslog]       | latest                      | [wodby/rsyslog]       |               |                    |
+| Gotenberg       | latest                      | [gotenberg/gotenberg] | ✓             |                    |
+| Mailpit         | latest                      | [axllent/mailpit]     | ✓             | ✓                  |
+| [OpenSMTPD]     | 6.0                         | [wodby/opensmtpd]     | ✓             |                    |
+| Adminer         | 4.6                         | [wodby/adminer]       | ✓             |                    |
+| Traefik         | latest                      | [_/traefik]           | ✓             | ✓                  |
                                                                                                  
 ## Documentation                                                                                 
                                                                                                  
@@ -65,7 +65,6 @@ We regularly update images used in this stack and release them together, see [re
 
 This project is licensed under the MIT open source license.
 
-[AthenaPDF]: https://wodby.com/docs/stacks/ruby/containers#athenapdf
 [Elasticsearch]: https://wodby.com/docs/stacks/elasticsearch
 [Kibana]: https://wodby.com/docs/stacks/elasticsearch
 [MariaDB]: https://wodby.com/docs/stacks/ruby/containers#mariadb
@@ -82,7 +81,7 @@ This project is licensed under the MIT open source license.
 [Varnish]: https://wodby.com/docs/stacks/ruby/containers#varnish
 
 [_/traefik]: https://hub.docker.com/_/traefik
-[arachnysdocker/athenapdf-service]: https://hub.docker.com/r/arachnysdocker/athenapdf-service
+[gotenberg/gotenberg]: https://hub.docker.com/r/gotenberg/gotenberg
 [blackfire/blackfire]: https://hub.docker.com/r/blackfire/blackfire
 [axllent/mailpit]: https://hub.docker.com/r/axllent/mailpit
 [wodby/adminer]: https://hub.docker.com/r/wodby/adminer
