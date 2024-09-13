@@ -15,26 +15,26 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 The Ruby stack consist of the following containers:
 
-| Container       | Versions                    | Image                 | ARM64 support | Enabled by default |
-|-----------------|-----------------------------|-----------------------|---------------|--------------------|
-| [Nginx]         | 1.27, 1.26                  | [wodby/nginx]         | ✓             | ✓                  |
-| [Ruby]          | 3.3, 3.2, 3.1               | [wodby/ruby]          | ✓             | ✓                  |
-| [Sidekiq]       |                             | [wodby/ruby]          | ✓             |                    |
-| [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]      | ✓             | ✓                  |
-| [Valkey]        | 7                           | [wodby/valkey]        | ✓             | ✓                  |
-| [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]       | ✓             |                    |
-| [Node.js]       | 20, 18                      | [wodby/node]          | ✓             |                    |
-| [Varnish]       | 6.0                         | [wodby/varnish]       | ✓             |                    |
-| [Solr]          | 8                           | [wodby/solr]          |               |                    |
-| [Elasticsearch] | 7                           | [wodby/elasticsearch] |               |                    |
-| [Kibana]        | 7                           | [wodby/kibana]        |               |                    |
-| [Memcached]     | 1                           | [wodby/memcached]     |               |                    |
-| [Rsyslog]       | latest                      | [wodby/rsyslog]       |               |                    |
-| Gotenberg       | latest                      | [gotenberg/gotenberg] | ✓             |                    |
-| Mailpit         | latest                      | [axllent/mailpit]     | ✓             | ✓                  |
-| [OpenSMTPD]     | 6.0                         | [wodby/opensmtpd]     | ✓             |                    |
-| Adminer         | 4.6                         | [wodby/adminer]       | ✓             |                    |
-| Traefik         | latest                      | [_/traefik]           | ✓             | ✓                  |
+| Container       | Versions                | Image                 | ARM64 support | Enabled by default |
+|-----------------|-------------------------|-----------------------|---------------|--------------------|
+| [Nginx]         | 1.27, 1.26              | [wodby/nginx]         | ✓             | ✓                  |
+| [Ruby]          | 3.3, 3.2, 3.1           | [wodby/ruby]          | ✓             | ✓                  |
+| [Sidekiq]       |                         | [wodby/ruby]          | ✓             |                    |
+| [PostgreSQL]    | 16, 15, 14, 13, 12      | [wodby/postgres]      | ✓             | ✓                  |
+| [Valkey]        | 7                       | [wodby/valkey]        | ✓             | ✓                  |
+| [MariaDB]       | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]       | ✓             |                    |
+| [Node.js]       | 20, 18                  | [wodby/node]          | ✓             |                    |
+| [Varnish]       | 6.0                     | [wodby/varnish]       | ✓             |                    |
+| [Solr]          | 8                       | [wodby/solr]          |               |                    |
+| [Elasticsearch] | 7                       | [wodby/elasticsearch] |               |                    |
+| [Kibana]        | 7                       | [wodby/kibana]        |               |                    |
+| [Memcached]     | 1                       | [wodby/memcached]     |               |                    |
+| [Rsyslog]       | latest                  | [wodby/rsyslog]       |               |                    |
+| Gotenberg       | latest                  | [gotenberg/gotenberg] | ✓             |                    |
+| Mailpit         | latest                  | [axllent/mailpit]     | ✓             | ✓                  |
+| [OpenSMTPD]     | 6.0                     | [wodby/opensmtpd]     | ✓             |                    |
+| Adminer         | 4.6                     | [wodby/adminer]       | ✓             |                    |
+| Traefik         | latest                  | [_/traefik]           | ✓             | ✓                  |
                                                                                                  
 ## Documentation                                                                                 
                                                                                                  
