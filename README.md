@@ -23,7 +23,7 @@ The Ruby stack consist of the following containers:
 | [PostgreSQL]    | 16, 15, 14, 13, 12      | [wodby/postgres]      | ✓             | ✓                  |
 | [Valkey]        | 8, 7                    | [wodby/valkey]        | ✓             | ✓                  |
 | [MariaDB]       | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]       | ✓             |                    |
-| [Node.js]       | 20, 18                  | [wodby/node]          | ✓             |                    |
+| [Node.js]       | 22, 20, 18              | [wodby/node]          | ✓             |                    |
 | [Varnish]       | 6.0                     | [wodby/varnish]       | ✓             |                    |
 | [Solr]          | 8                       | [wodby/solr]          |               |                    |
 | [Elasticsearch] | 7                       | [wodby/elasticsearch] |               |                    |
