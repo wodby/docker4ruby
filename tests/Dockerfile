@@ -7,7 +7,7 @@ RUN sudo apk add --update yarn
 RUN rails new . --database=postgresql
 RUN bundle add sidekiq
 RUN bundle install
-RUN rails g sidekiq:worker Hard
+RUN rails g sidekiq:job Hard
 
 COPY database.yml config/database.yml
 
