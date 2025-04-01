@@ -33,8 +33,8 @@ The Ruby stack consist of the following containers:
 | [Rsyslog]             | latest                  | [wodby/rsyslog]                           | ✓             |                    |
 | Gotenberg             | latest                  | [gotenberg/gotenberg]                     | ✓             |                    |
 | Mailpit               | latest                  | [axllent/mailpit]                         | ✓             | ✓                  |
-| [OpenSMTPD]           | 6.0                     | [wodby/opensmtpd]                         | ✓             |                    |
-| Adminer               | 4.6                     | [wodby/adminer]                           | ✓             |                    |
+| [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         | ✓             |                    |
+| Adminer               | 5                       | [wodby/adminer]                           | ✓             |                    |
 | Traefik               | latest                  | [_/traefik]                               | ✓             | ✓                  |
 
 ## Documentation
