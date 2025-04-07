@@ -19,7 +19,7 @@ The Ruby stack consist of the following containers:
 | Container             | Versions                | Image                                     | ARM64 support | Enabled by default |
 |-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
 | [Nginx]               | 1.27, 1.26              | [wodby/nginx]                             | ✓             | ✓                  |
-| [Ruby]                | 3.3, 3.2, 3.1           | [wodby/ruby]                              | ✓             | ✓                  |
+| [Ruby]                | 3.4, 3.3, 3.2           | [wodby/ruby]                              | ✓             | ✓                  |
 | [Sidekiq]             |                         | [wodby/ruby]                              | ✓             |                    |
 | [PostgreSQL]          | 17, 16, 15, 14, 13      | [wodby/postgres]                          | ✓             | ✓                  |
 | [Valkey]              | 8, 7                    | [wodby/valkey]                            | ✓             | ✓                  |
