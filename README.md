@@ -14,7 +14,7 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 ## Stack
 
-The Ruby stack consist of the following containers:
+The Ruby stack consists of the following containers:
 
 | Container             | Versions                | Image                                     | ARM64 support | Enabled by default |
 |-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
@@ -24,7 +24,7 @@ The Ruby stack consist of the following containers:
 | [PostgreSQL]          | 17, 16, 15, 14, 13      | [wodby/postgres]                          | ✓             | ✓                  |
 | [Valkey]              | 8, 7                    | [wodby/valkey]                            | ✓             | ✓                  |
 | [MariaDB]             | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]                           | ✓             |                    |
-| [Node.js]             | 22, 20, 18              | [wodby/node]                              | ✓             |                    |
+| [Node.js]             | 24, 22, 20              | [wodby/node]                              | ✓             |                    |
 | [Varnish]             | 6.0                     | [wodby/varnish]                           | ✓             |                    |
 | [Solr]                | 9                       | [wodby/solr]                              | ✓             |                    |
 | OpenSearch            | 2                       | [opensearchproject/opensearch]            | ✓             |                    |
