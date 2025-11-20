@@ -21,9 +21,10 @@ The Ruby stack consists of the following containers:
 | [Nginx]               | 1.29, 1.28              | [wodby/nginx]                             | ✓             | ✓                  |
 | [Ruby]                | 3.4, 3.3, 3.2           | [wodby/ruby]                              | ✓             | ✓                  |
 | [Sidekiq]             |                         | [wodby/ruby]                              | ✓             |                    |
-| [PostgreSQL]          | 17, 16, 15, 14, 13      | [wodby/postgres]                          | ✓             | ✓                  |
-| [Valkey]              | 8.1, 8.0, 7             | [wodby/valkey]                            | ✓             | ✓                  |
-| [MariaDB]             | 11.4, 10.11, 10.6, 10.5 | [wodby/mariadb]                           | ✓             |                    |
+| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          | ✓             | ✓                  |
+| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            | ✓             | ✓                  |
+| [Redis]               | 8.2, 8.0, 7.4           | [wodby/redis]                             | ✓             |                    |
+| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓             |                    |
 | [Node.js]             | 24, 22, 20              | [wodby/node]                              | ✓             |                    |
 | [Varnish]             | 6.0                     | [wodby/varnish]                           | ✓             |                    |
 | [Solr]                | 9                       | [wodby/solr]                              | ✓             |                    |
@@ -93,6 +94,8 @@ This project is licensed under the MIT open source license.
 
 [Valkey]: https://wodby.com/docs/stacks/ruby/containers#valkey
 
+[Redis]: https://wodby.com/docs/stacks/ruby/containers#redis
+
 [Varnish]: https://wodby.com/docs/stacks/ruby/containers#varnish
 
 [_/traefik]: https://hub.docker.com/_/traefik
@@ -124,6 +127,8 @@ This project is licensed under the MIT open source license.
 [wodby/solr]: https://github.com/wodby/solr
 
 [wodby/valkey]: https://github.com/wodby/valkey
+
+[wodby/redis]: https://github.com/wodby/redis
 
 [wodby/varnish]: https://github.com/wodby/varnish
 
