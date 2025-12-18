@@ -36,7 +36,7 @@ The Ruby stack consists of the following containers:
 | Mailpit               | latest                  | [axllent/mailpit]                         | ✓             | ✓                  |
 | [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         | ✓             |                    |
 | Adminer               | 5                       | [wodby/adminer]                           | ✓             |                    |
-| Traefik               | latest                  | [_/traefik]                               | ✓             | ✓                  |
+| Traefik               | 3                       | [_/traefik]                               | ✓             | ✓                  |
 
 ## Documentation
 
