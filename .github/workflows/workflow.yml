@@ -14,10 +14,10 @@ jobs:
   test:
     strategy:
       matrix:
-        version: [ '3.4','3.3','3.2' ]
+        version: [ '4.0','3.4','3.3' ]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: test
       env:
         RUBY_VER: ${{ matrix.version }}
@@ -27,7 +27,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     needs: test
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: prepare artifact
       run: cp docker.mk Makefile && tar -czf docker4ruby.tar.gz compose.yml Makefile .env traefik.yml
     - name: get tag name
