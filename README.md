@@ -7,7 +7,7 @@
 Docker4Ruby is a set of docker images optimized for Ruby applications (suitable for Ruby on Rails). Use
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4ruby/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
-* Read the docs on [**how to use**](https://wodby.com/docs/stacks/ruby/local#usage)
+* Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/ruby/local#usage)
 * Ask questions on [Discord](http://discord.wodby.com/)
 * Ask questions on [Slack](http://slack.wodby.com/)
 * Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -16,31 +16,31 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 
 The Ruby stack consists of the following containers:
 
-| Container             | Versions                | Image                                     | ARM64 support | Enabled by default |
-|-----------------------|-------------------------|-------------------------------------------|---------------|--------------------|
-| [Nginx]               | 1.31, 1.30              | [wodby/nginx]                             | ✓             | ✓                  |
-| [Ruby]                | 4.0, 3.4, 3.3           | [wodby/ruby]                              | ✓             | ✓                  |
-| [Sidekiq]             |                         | [wodby/ruby]                              | ✓             |                    |
-| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          | ✓             | ✓                  |
-| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            | ✓             | ✓                  |
-| [Redis]               | 8.6, 8.4, 8.2, 7.4      | [wodby/redis]                             | ✓             |                    |
-| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           | ✓             |                    |
-| [Node.js]             | 26, 24, 22              | [wodby/node]                              | ✓             |                    |
-| Vinyl ([Varnish])     | 8.0, 6.0                | [wodby/vinyl]                             | ✓             |                    |
-| [Solr]                | 10, 9                   | [wodby/solr]                              | ✓             |                    |
-| OpenSearch            | 2                       | [opensearchproject/opensearch]            | ✓             |                    |
-| OpenSearch Dashboards | 2                       | [opensearchproject/opensearch-dashboards] | ✓             |                    |
-| [Memcached]           | 1                       | [wodby/memcached]                         | ✓             |                    |
-| [Rsyslog]             | latest                  | [wodby/rsyslog]                           | ✓             |                    |
-| Gotenberg             | latest                  | [gotenberg/gotenberg]                     | ✓             |                    |
-| Mailpit               | latest                  | [axllent/mailpit]                         | ✓             | ✓                  |
-| [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         | ✓             |                    |
-| Adminer               | 6                       | [wodby/adminer]                           | ✓             |                    |
-| Traefik               | 3                       | [_/traefik]                               | ✓             | ✓                  |
+| Container             | Versions                | Image                                     | Enabled by default |
+|-----------------------|-------------------------|-------------------------------------------|--------------------|
+| [Nginx]               | 1.31, 1.30              | [wodby/nginx]                             | ✓                  |
+| [Ruby]                | 4.0, 3.4, 3.3           | [wodby/ruby]                              | ✓                  |
+| [Sidekiq]             |                         | [wodby/ruby]                              |                    |
+| [PostgreSQL]          | 18, 17, 16, 15, 14      | [wodby/postgres]                          | ✓                  |
+| [Valkey]              | 9.0, 8.1, 8.0, 7        | [wodby/valkey]                            | ✓                  |
+| [Redis]               | 8.6, 8.4, 8.2, 7.4      | [wodby/redis]                             |                    |
+| [MariaDB]             | 11.8, 11.4, 10.11, 10.6 | [wodby/mariadb]                           |                    |
+| [Node.js]             | 26, 24, 22              | [wodby/node]                              |                    |
+| Vinyl ([Varnish])     | 8.0, 6.0                | [wodby/vinyl]                             |                    |
+| [Solr]                | 10, 9                   | [wodby/solr]                              |                    |
+| OpenSearch            | 2                       | [opensearchproject/opensearch]            |                    |
+| OpenSearch Dashboards | 2                       | [opensearchproject/opensearch-dashboards] |                    |
+| [Memcached]           | 1                       | [wodby/memcached]                         |                    |
+| [Rsyslog]             | latest                  | [wodby/rsyslog]                           |                    |
+| Gotenberg             | latest                  | [gotenberg/gotenberg]                     |                    |
+| Mailpit               | latest                  | [axllent/mailpit]                         | ✓                  |
+| [OpenSMTPD]           | 7                       | [wodby/opensmtpd]                         |                    |
+| Adminer               | 6                       | [wodby/adminer]                           |                    |
+| Traefik               | 3                       | [_/traefik]                               | ✓                  |
 
 ## Documentation
 
-Full documentation is available at https://wodby.com/docs/stacks/ruby/local
+Full documentation is available at https://wodby.com/docs/1.0/stacks/ruby/local
 
 ## Image tags
 
@@ -61,9 +61,6 @@ uses semantic product versions, and third-party images follow their own tag form
 See the [image revision policy](https://github.com/wodby/images#image-revisions)
 for details.
 
-Test fixtures use `*_IMAGE_REVISION` environment variables for the image release
-suffix.
-
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4ruby/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
@@ -79,31 +76,31 @@ We regularly update images used in this stack and release them together, see [re
 
 This project is licensed under the MIT open source license.
 
-[MariaDB]: https://wodby.com/docs/stacks/ruby/containers#mariadb
+[MariaDB]: https://wodby.com/docs/1.0/stacks/ruby/containers#mariadb
 
-[Memcached]: https://wodby.com/docs/stacks/ruby/containers#memcached
+[Memcached]: https://wodby.com/docs/1.0/stacks/ruby/containers#memcached
 
-[Nginx]: https://wodby.com/docs/stacks/ruby/containers#nginx
+[Nginx]: https://wodby.com/docs/1.0/stacks/ruby/containers#nginx
 
-[Node.js]: https://wodby.com/docs/stacks/ruby/containers#node
+[Node.js]: https://wodby.com/docs/1.0/stacks/ruby/containers#node
 
-[OpenSMTPD]: https://wodby.com/docs/stacks/ruby/containers#opensmtpd
+[OpenSMTPD]: https://wodby.com/docs/1.0/stacks/ruby/containers#opensmtpd
 
-[PostgreSQL]: https://wodby.com/docs/stacks/ruby/containers#postgres
+[PostgreSQL]: https://wodby.com/docs/1.0/stacks/ruby/containers#postgres
 
-[Rsyslog]: https://wodby.com/docs/stacks/ruby/containers#rsyslog
+[Rsyslog]: https://wodby.com/docs/1.0/stacks/ruby/containers#rsyslog
 
-[Ruby]: https://wodby.com/docs/stacks/ruby/containers#ruby
+[Ruby]: https://wodby.com/docs/1.0/stacks/ruby/containers#ruby
 
-[Sidekiq]: https://wodby.com/docs/stacks/ruby/containers#sidekiq
+[Sidekiq]: https://wodby.com/docs/1.0/stacks/ruby/containers#sidekiq
 
-[Solr]: https://wodby.com/docs/stacks/solr
+[Solr]: https://wodby.com/docs/1.0/stacks/solr
 
-[Valkey]: https://wodby.com/docs/stacks/ruby/containers#valkey
+[Valkey]: https://wodby.com/docs/1.0/stacks/ruby/containers#valkey
 
-[Redis]: https://wodby.com/docs/stacks/ruby/containers#redis
+[Redis]: https://wodby.com/docs/1.0/stacks/ruby/containers#redis
 
-[Varnish]: https://wodby.com/docs/stacks/ruby/containers#varnish
+[Varnish]: https://wodby.com/docs/1.0/stacks/ruby/containers#varnish
 
 [_/traefik]: https://hub.docker.com/_/traefik
 

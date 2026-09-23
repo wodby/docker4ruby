@@ -38,7 +38,7 @@ services:
       DB_ADAPTER: $DB_ADAPTER
     volumes:
     - ./:/usr/src/app:cached
-## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/ruby/local#docker-for-mac
+## Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/ruby/local#docker-for-mac
 #    - backend:/usr/src/app
 
 #  sidekiq:
@@ -57,7 +57,7 @@ services:
 #    command: ["bundle", "exec", "sidekiq"]
 #    volumes:
 #    - ./:/usr/src/app:cached
-### Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/ruby/local#docker-for-mac
+### Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/ruby/local#docker-for-mac
 ##    - backend:/usr/src/app
 
   nginx:
@@ -72,7 +72,7 @@ services:
       NGINX_VHOST_PRESET: http-proxy
     volumes:
     - ./:/usr/src/app:cached
-## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/ruby/local#docker-for-mac
+## Alternative for macOS users: Mutagen https://wodby.com/docs/1.0/stacks/ruby/local#docker-for-mac
 #    - backend:/usr/src/app
     labels:
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
