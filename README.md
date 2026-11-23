@@ -8,6 +8,7 @@ Docker4Ruby is a set of docker images optimized for Ruby applications (suitable 
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4ruby/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
 * Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/ruby/local#usage)
+* Deploy to production with the [Rails stack on Wodby](https://wodby.com/deploy-rails)
 * Ask questions on [Discord](http://discord.wodby.com/)
 * Ask questions on [Slack](http://slack.wodby.com/)
 * Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -64,6 +65,20 @@ for details.
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4ruby/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
+
+## Deploy to production
+
+Docker4Ruby is for local development with Docker Compose. To run a Rails application in production, use the [Rails stack on Wodby](https://wodby.com/deploy-rails). For a Ruby application that is not Rails, there is a [Ruby stack](https://wodby.com/stacks/ruby).
+
+The Rails stack runs your repository on Kubernetes on Puma, with PostgreSQL, Valkey, and a Sidekiq worker. You choose where it runs: Wodby Cloud, a Kubernetes cluster in your own cloud account, or a single server of your own.
+
+* Start from the Rails boilerplate, or connect your own repository
+* Gems are installed and assets precompiled during the build
+* The database is prepared after each deployment, so migrations are not part of your pipeline
+* CI/CD is built in
+* A free plan is available, including on a server of your own
+
+Read the [Rails stack guide](https://wodby.com/docs/2.0/stacks/catalog/rails/), or see [Rails hosting on Wodby](https://wodby.com/rails-hosting) and [pricing](https://wodby.com/pricing).
 
 ## Other Docker4x projects
 
